@@ -1,0 +1,716 @@
+/* General Setup */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+/* body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e9ecef;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+/* Header Section */
+/* header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff4d4d;
+    text-shadow: 3px 3px 0px #000;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #888;
+    margin-top: 10px;
+} */
+
+/* Input Card Styling */
+/* .input-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 2;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+}
+
+.input-group button {
+    flex: 0.5;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    background: #ff3333;
+    transform: scale(1.05);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #444;
+    color: #fff;
+} */
+
+/* Grid Layout */
+/* .task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+} */
+
+/* Task Card Styling */
+/* .task-card {
+    background: #ffffff;
+    color: #2b2b2b;
+    padding: 25px;
+    border-radius: 18px;
+    position: relative;
+    transition: all 0.4s ease;
+    border-left: 8px solid #ff4d4d;
+}
+
+.task-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 77, 77, 0.2);
+}
+
+.task-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.task-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+} */
+
+/* Status Specifics */
+/* .completed-task {
+    border-left: 8px solid #28a745;
+    background: #f0fff4;
+    opacity: 0.8;
+}
+
+.completed-task h3 {
+    text-decoration: line-through;
+    color: #888;
+} */
+
+/* Buttons */
+/* .card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: 0.2s;
+}
+
+.submit-btn { background: #28a745; color: white; }
+.delete-btn { background: #dc3545; color: white; }
+
+.btn:hover { opacity: 0.9; } */
+
+
+
+
+/* above is for ritikatask management now the modified version using glassmorphisim */
+
+
+
+/* Glassmorphism Theme by Ritika */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+/* body {
+    /* Vibrant mesh gradient background to show through the glass 
+    background: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    background-color: #0f0c29;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 20px;
+} */
+
+/* .app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header Section *
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #ff4d4d, #f9cb28);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 5px 15px rgba(255, 77, 77, 0.4));
+}
+
+/* The Glass Card (Input Section) *
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.glass-input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.glass-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ff4d4d;
+}
+
+.add-btn {
+    background: linear-gradient(45deg, #ff4d4d, #f9cb28);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
+}
+
+/* Task Grid *
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Glass Task Card 
+.task-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.4s ease;
+}
+
+.task-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-10px);
+    border-color: rgba(255, 77, 77, 0.5);
+}
+
+.task-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.task-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styling for Glass Cards 
+.card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.done-btn { background: #28a745; color: white; }
+.del-btn { background: rgba(220, 53, 69, 0.2); border: 1px solid #dc3545; color: #ff6b6b; }
+
+.done-btn:hover { background: #218838; }
+.del-btn:hover { background: #dc3545; color: white; }
+
+/* Completed State *
+.completed-style {
+    border-color: #28a745 !important;
+    background: rgba(40, 167, 69, 0.1) !important;
+}
+
+.completed-style h3 {
+    text-decoration: line-through;
+    color: #888;
+} */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    /* Ultra-dark deep space background *
+    background: radial-gradient(circle at top right, #1a1a1a, #000000);
+    color: #fff;
+    min-height: 100vh;
+    padding: 60px 20px;
+    overflow-x: hidden;
+    /* This creates the 3D space for anti-gravity effects *
+    perspective: 1000px;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInDown 1s ease;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.3));
+}
+
+/* Glass Panel for Inputs *
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    transform: translateZ(20px); /* Lifts it up slightly *
+}
+
+.glass-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 15px 25px;
+    color: #FFD700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    outline: none;
+}
+
+.add-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 165, 0, 0.4);
+}
+
+/* ANTI-GRAVITY TASK CARDS *
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.task-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    padding: 30px;
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s;
+    /* Floating Effect Initial State *
+    transform-style: preserve-3d;
+    transform: rotateX(5deg) rotateY(-5deg);
+}
+
+.task-card:hover {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(30px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #FFD700;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.task-card h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    color: #aaa;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.done-btn {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.del-btn {
+    background: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+Animation for adding tasks *
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+} */
+
+
+
+
+
+
+
+:root {
+    --bg: #050505;
+    --accent: #00f2ff; /* Electric Cyan */
+    --text: #ffffff;
+    --dim: #444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.main-viewport {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+/* Header Anti-Gravity Feel */
+.hero { 
+    text-align: center; 
+    margin-bottom: 100px; 
+    perspective: 1000px; /* Adds depth */
+}
+
+.hero h1 {
+    font-size: 5rem; /* Larger, more dominant */
+    font-weight: 200;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    
+    /* Layered Gradient: White to Titanium Gray */
+    background: linear-gradient(180deg, #ffffff 30%, #444444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* The "Antigravity" Glow Effect */
+    filter: drop-shadow(0 0 8px rgba(0, 242, 255, 0.2));
+    
+    /* Animation for the "Floating" feel */
+    animation: floatingText 4s ease-in-out infinite, shimmer 6s linear infinite;
+    position: relative;
+    display: inline-block;
+}
+
+/* Subtle vertical float */
+@keyframes floatingText {
+    0%, 100% { transform: translateY(0px) rotateX(0deg); }
+    50% { transform: translateY(-10px) rotateX(5deg); }
+}
+
+/* Text shimmer that moves across the letters */
+@keyframes shimmer {
+    0% { filter: drop-shadow(0 0 5px rgba(0, 242, 255, 0.1)); }
+    50% { filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.4)); }
+    100% { filter: drop-shadow(0 0 5px rgba(0, 242, 255, 0.1)); }
+}
+
+/* Make "Ritika" bold for contrast */
+.hero h1 span {
+    font-weight: 600;
+    color: #fff;
+    -webkit-text-fill-color: initial; /* Break the gradient for the name */
+    background: none;
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
+}
+
+/* Highly Visible Inputs */
+.input-wrapper {
+    display: flex;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--dim);
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.core-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.action-trigger {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    padding: 0 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-trigger:hover {
+    background: #fff;
+    box-shadow: 0 0 20px var(--accent);
+}
+
+/* Task Rows */
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #1a1a1a;
+    transition: 0.4s;
+}
+
+.task-row:hover {
+    transform: translateX(10px);
+    border-bottom-color: var(--accent);
+}
+
+.task-meta h3 { font-weight: 400; font-size: 1.5rem; }
+.index { color: var(--accent); font-size: 0.8rem; margin-right: 15px; vertical-align: middle; }
+
+/* Operational Buttons (Highly Visible) */
+.op-btn {
+    background: transparent;
+    border: 1px solid var(--dim);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.verify:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 10px var(--accent); }
+.terminal:hover { border-color: #ff3e3e; color: #ff3e3e; box-shadow: 0 0 10px #ff3e3e; }
+
+.task-complete { opacity: 0.2; filter: grayscale(1); }
+
+.status-line {
+    font-size: 0.9rem;
+    color: var(--dim);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    opacity: 0.8;
+    border-right: 2px solid var(--accent); /* Cursor effect */
+    display: inline-block;
+    padding-right: 5px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: var(--accent); }
+}
+.search-wrapper {
+    margin-top: 15px;
+    position: relative;
+    z-index: 5;
+}
+
+.search-input {
+    width: 100%;
+    /* Dark semi-transparent background */
+    background: rgba(255, 255, 255, 0.02);
+    /* Subtle border that blends into the black */
+    border: 1px solid #111;
+    border-radius: 50px; /* Pill shape for tech feel */
+    padding: 12px 25px;
+    color: var(--accent); /* Text matches the cyan glow */
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+}
+
+/* Interaction: Glow only when active */
+.search-input:focus {
+    background: rgba(0, 242, 255, 0.05);
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+    padding-left: 35px; /* Subtle "slide" effect on focus */
+}
+
+/* Customize the placeholder color to be very dim */
+.search-input::placeholder {
+    color: #444;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+
+.input-wrapper {
+    display: flex;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid #111;
+    border-radius: 8px;
+    padding: 2px;
+    margin-bottom: 20px;
+    transition: border 0.3s;
+}
+
+.input-wrapper:focus-within {
+    border-color: var(--accent);
+}
+
+.core-input::placeholder {
+    color: #333;
+}

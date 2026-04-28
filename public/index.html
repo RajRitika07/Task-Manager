@@ -1,0 +1,247 @@
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager - MEAN Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-controller="TaskController">
+
+    <div class="container">
+        <h1>Task Management System</h1>
+
+        <div class="task-form">
+            <input type="text" ng-model="newTask.title" placeholder="What needs to be done?" required>
+            <textarea ng-model="newTask.description" placeholder="Description (optional)"></textarea>
+            <button ng-click="addTask()">Add Task</button>
+        </div>
+
+        <hr>
+
+        <div class="filters">
+            <input type="text" ng-model="searchText" placeholder="Search tasks...">
+        </div>
+
+        <ul class="task-list">
+            <li ng-repeat="task in tasks | filter:searchText" class="task-item">
+                <div class="task-details">
+                    <span class="task-title">**{{task.title}}**</span>
+                    <p class="task-desc">{{task.description}}</p>
+                    <small>Status: {{task.status}}</small>
+                </div>
+                <button class="delete-btn" ng-click="deleteTask(task._id)">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Ritika Task Management 😈</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="TaskController">
+
+    <div class="app-container">
+        <header>
+            <h1>Ritika Task Management 😈</h1>
+            <p>Stay organized, stay wicked.</p>
+        </header>
+
+        <section class="input-card">
+            <div class="input-group">
+                <input type="text" ng-model="newTask.title" placeholder="Add a new mission...">
+                <button ng-click="addTask()">Add Task</button>
+            </div>
+            <input type="text" class="search-bar" ng-model="searchText" placeholder="🔍 Search tasks...">
+        </section>
+
+        <div class="task-grid">
+            <div class="task-card" ng-repeat="task in tasks | filter:searchText" ng-class="{'completed-task': task.status === 'Completed'}">
+                <div class="card-content">
+                    <h3>{{task.title}}</h3>
+                    <span class="status-badge">{{task.status}}</span>
+                </div>
+                <div class="card-actions">
+                    <button class="complete-btn" ng-if="task.status !== 'Completed'" ng-click="completeTask(task)">
+                        Done ✓
+                    </button>
+                    <button class="delete-btn" ng-click="deleteTask(task._id)">
+                        Delete 🗑
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> -->
+
+
+<!-- above is for ritikatask mangement with badsic now with glassmorphisim -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Ritika Task Management 😈</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body ng-controller="TaskController">
+
+    <div class="app-container">
+        <header>
+            <h1>Ritika Task Management 😈</h1>
+            <p>Glassmorphism Productivity Suite v2.0</p>
+        </header>
+
+        <section class="glass-panel">
+            <div class="input-group">
+                <input type="text" class="glass-input" ng-model="newTask.title" placeholder="What's the mission?">
+                <button class="add-btn" ng-click="addTask()">Add Task</button>
+            </div>
+            <input type="text" class="glass-input search-bar" ng-model="searchText" placeholder="🔍 Search through the glass...">
+        </section>
+
+        <div class="task-grid">
+            <div class="task-card" ng-repeat="task in tasks | filter:searchText" ng-class="{'completed-style': task.status === 'Completed'}">
+                <h3>{{task.title}}</h3>
+                <p>{{task.description || 'No description provided.'}}</p>
+                
+                <div class="card-actions">
+                    <button class="btn done-btn" ng-if="task.status !== 'Completed'" ng-click="completeTask(task)">
+                        Done ✓
+                    </button>
+                    <button class="btn del-btn" ng-click="deleteTask(task._id)">
+                        Delete 🗑
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Ritika Task Management 🌻</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body ng-controller="TaskController">
+
+    <div class="app-container">
+        <header>
+            <h1>Ritika Task Management 🌻</h1>
+            <p>Floating in efficiency.</p>
+        </header>
+
+        <section class="glass-panel">
+            <div class="input-area">
+                <input type="text" class="glass-input" ng-model="newTask.title" placeholder="New Task Title...">
+                <textarea class="glass-input" ng-model="newTask.description" placeholder="Description..."></textarea>
+                <button class="add-btn" ng-click="addTask()">Deploy Mission</button>
+            </div>
+            <div style="margin-top: 20px;">
+                <input type="text" class="glass-input" style="border-radius: 50px;" ng-model="searchText" placeholder="🔍 Filter through the void...">
+            </div>
+        </section>
+
+        <div class="task-grid">
+            <div class="task-card" ng-repeat="task in tasks | filter:searchText" ng-class="{'completed-task': task.status === 'Completed'}">
+                <div class="card-inner">
+                    <h3>{{task.title}}</h3>
+                    <p>{{task.description}}</p>
+                    <div class="btn-container">
+                        <button class="done-btn" ng-if="task.status !== 'Completed'" ng-click="completeTask(task)">Submit ✓</button>
+                        <button class="del-btn" ng-click="deleteTask(task._id)">Discard 🗑</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="taskApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Ritika Task Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body ng-controller="TaskController">
+
+    <div id="particles-js"></div>
+
+    <div class="main-viewport">
+        <header class="hero">
+            <h1 class="glitch-text">Ritika Task Manager</h1>
+            <div class="status-line">Organizing the chaos of the digital void.</div>
+        </header>
+
+        <div class="control-center">
+            <div class="input-wrapper">
+                <input type="text" class="core-input" ng-model="newTask.title" placeholder="Initialize new task...">
+                <button class="action-trigger" ng-click="addTask()">DEPLOY</button>
+            </div>
+            <div class="search-wrapper">
+                <input type="text" class="search-input" ng-model="searchText" placeholder="Filter memory...">
+            </div>
+        </div>
+
+        <div class="flow-container">
+            <div class="task-row" ng-repeat="task in tasks | filter:searchText" ng-class="{'task-complete': task.status === 'Completed'}">
+                <div class="task-meta">
+                    <span class="index">0{{$index + 1}}</span>
+                    <h3>{{task.title}}</h3>
+                </div>
+                <div class="task-ops">
+                    <button class="op-btn verify" ng-if="task.status !== 'Completed'" ng-click="completeTask(task)">SUBMIT</button>
+                    <button class="op-btn terminal" ng-click="deleteTask(task._id)">TERMINATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/particles-config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
